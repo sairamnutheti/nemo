@@ -22,6 +22,7 @@
     "nemo:server": "./bin/nemo -B test -S",
     "nemo:dynamic": "./bin/nemo -B test -U --url-from-cli 'https://www.wikipedia.org' -P dynamic",
     "nemo:scaffold": "./bin/nemo -B scaffold -P pay,search,form",
+    "nemo:allure": "SELENIUM_PROMISE_MANAGER=0 ./bin/nemo -B test -P allure -G @suite1",
     "lint": "eslint ./bin/* ./lib/*"
   },
   "repository": {
